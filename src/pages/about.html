@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>The Philippines | Home</title>
+  <link href="../style.css" rel="stylesheet" type="text/css" />
+
+<body>
+<main>
+
+  <style>
+    .bg1 {
+      background-image: url(../images/bg1.jpg);
+    }
+
+    .bg2 {
+      background-image: url(../images/bg2.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+
+
+      color: #F08080;
+    }
+
+    .blur {
+      background-color: rgba(0, 0, 0, 0.1);
+      transition: backdrop-filter 0.5s;
+      color: #FF6961;
+      flex-grow: 1;
+      margin-outside: 0;
+      place-self: center;
+    }
+
+    .blur:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+      transition: backdrop-filter 0.5s;
+      backdrop-filter: blur(0.3rem);
+      color: #FF6961;
+    }
+
+    .card-text {
+      color: white;
+    }
+  </style>
+
+  <nav>
+    <div class="navbar">
+      <a href="../index.html" class="navbar-logo">The Philippines | About</a>
+      <ul class="navbar-grid">
+        <a href="../index.html" class="navbar-text">Home</a>
+        <a href="places.html" class="navbar-text">Places</a>
+        <a href="events.html" class="navbar-text">Events</a>
+        <a href="about.html" class="navbar-text">About</a>
+      </ul>
+    </div>
+  </nav>
+
+
+  <p class="subtitle">This website was made by Sebastian Benz
+  </p>
+
+  <section class="grid">
+    <a>
+      <a href="https://unsplash.com/photos/pagoda-surrounded-by-trees-E_eWwM29wfU" class='card bg2'>
+        <div class='blur'>
+          <h2 class='card-text'>Background Image 1</h2>
+          <h3 class='card-text'>by Su San Lee</h3>
+        </div>
+      </a>
+    </a>
+
+  </section>
+
+
+
+</main>
+
+<script type="module" src="../script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+:root {
+  --main-color: #F08080;
+  --secondary-color: #FF6961;
+  --hover-color: #EB5252;
+}
+
+@font-face {
+  font-family: 'EduVIC';
+  src: url('fonts/EduVIC.ttf') format('truetype');
+}
+
+body {
+  background-image: url('images/bg2.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  font-family: "EduVIC", serif;
+}
+
+.subtitle {
+  color: white;
+  text-align: center;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  background: var(--main-color);
+  border-radius: 5px;
+  padding: 0.75rem;
+  max-width: 100%;
+
+  place-self: center;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  place-self: center;
+}
+
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  transition: 0.5s ease;
+  max-width: 300px;
+  background-color: var(--secondary-color);
+  border-radius: 1rem;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  transition: 0.5s ease;
+  max-width: 300px;
+  background-color: var(--hover-color);
+  border-radius: 1rem;
+  transform: scale(1.1);
+}
+
+.navbar {
+  color: white;
+  text-align: center;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  background: var(--main-color);
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.navbar-logo {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: none;
+  margin-top: 1rem;
+  background: var(--main-color);
+  border-radius: 5px;
+  padding: 0.75rem;
+
+  place-self: center;
+}
+
+.navbar-grid {
+  color: white;
+  text-align: left;
+  font-size: 1.3rem;
+  text-decoration: none;
+  margin-top: 1rem;
+  background: var(--main-color);
+  border-radius: 5px;
+  padding: 0.75rem;
+  position: absolute;
+  top: 0.75rem;
+}
+
+.navbar-text {
+  color: white;
+  font-size: 1.3rem;
+  text-decoration: none;
+  background: var(--secondary-color);
+  transition: 0.5s ease;
+  border-radius: 5px;
+  padding: 0.75rem;
+  margin: 0.2rem;
+}
+.navbar-text:hover,
+.navbar-text:focus,
+.navbar-text:active {
+  color: white;
+  font-size: 1.3rem;
+  text-decoration: none;
+  margin-top: 1rem;
+  background: var(--hover-color);
+  transform: scale(1.1);
+  transition: 0.5s ease;
+  border-radius: 5px;
+  padding: 0.75rem;
+}
+
+.navbar-grid-right {
+  color: white;
+  text-align: right;
+  font-size: 1.3rem;
+  text-decoration: none;
+  margin-top: 1rem;
+  background: var(--main-color);
+  border-radius: 5px;
+  padding: 0.75rem;
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+}
+
+.navbar-active {
+  transform: scale(1.1);
+
+}

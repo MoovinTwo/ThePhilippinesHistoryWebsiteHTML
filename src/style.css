@@ -1,7 +1,7 @@
 :root {
-  --main-color: #F08080;
-  --secondary-color: #FF6961;
-  --hover-color: #EB5252;
+  --main-color: #005451;
+  --secondary-color: #09837f;
+  --hover-color: #119f9b;
 }
 
 @font-face {
@@ -47,13 +47,23 @@ body {
   text-decoration: none;
   transition: 0.5s ease;
   max-width: 300px;
-  background-color: var(--secondary-color);
+  background-color: var(--main-color);
   border-radius: 1rem;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
+.card-info {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  transition: 0.5s ease;
+  max-width: 300px;
+  background-color: var(--main-color);
+  border-radius: 1rem;
+}
+
+.card-info:hover {
   margin: 1rem;
   padding: 1.5rem;
   text-align: center;
@@ -73,7 +83,7 @@ body {
   margin-top: 1rem;
   background: var(--main-color);
   border-radius: 5px;
-  padding: 1rem;
+  padding: 1.2rem;
 }
 
 .navbar-logo {
@@ -99,7 +109,8 @@ body {
   border-radius: 5px;
   padding: 0.75rem;
   position: absolute;
-  top: 0.75rem;
+  top: 0;
+  display: flex;
 }
 
 .navbar-text {
@@ -112,23 +123,15 @@ body {
   padding: 0.75rem;
   margin: 0.2rem;
 }
-.navbar-text:hover,
-.navbar-text:focus,
-.navbar-text:active {
-  color: white;
-  font-size: 1.3rem;
-  text-decoration: none;
-  margin-top: 1rem;
+.navbar-text:hover {
   background: var(--hover-color);
-  transform: scale(1.1);
   transition: 0.5s ease;
-  border-radius: 5px;
-  padding: 0.75rem;
+  transform: translate(0px, 10px);
 }
 
 .navbar-grid-right {
   color: white;
-  text-align: right;
+  text-align: left;
   font-size: 1.3rem;
   text-decoration: none;
   margin-top: 1rem;
@@ -136,11 +139,18 @@ body {
   border-radius: 5px;
   padding: 0.75rem;
   position: absolute;
-  top: 0.75rem;
-  right: 1rem;
+  right: 30px;
+  top: 0;
+  display: flex;
 }
 
-.navbar-active {
-  transform: scale(1.1);
-
+.navbar-subtext {
+  color: white;
+  font-size: 1.3rem;
+  text-decoration: none;
+  background: var(--secondary-color);
+  transition: 0.5s ease;
+  border-radius: 5px;
+  padding: 0.75rem;
+  margin: 0.2rem;
 }

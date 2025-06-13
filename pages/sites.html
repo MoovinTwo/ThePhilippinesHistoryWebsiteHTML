@@ -5,12 +5,59 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>The Philippines | Home</title>
+    <title>Sweden | Natural Sites</title>
     <link href="../style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 
+<style>
+    body {
+        background: url(https://media.cntraveler.com/photos/5b647477ccb47906dd81cb6e/16:9/w_2560%2Cc_limit/Kebnekaise-Peak-Melt_GettyImages-rh252-8560.jpg) no-repeat center;
+        background-size: cover;
+        background-position-y: -10%;
+    }
+
+    .card-info {
+        max-width: 1000px;
+    }
+
+    .card-info:hover {
+        max-width: 1000px;
+        transform: scale(1);
+        background-color: var(--main-color);
+    }
+
+    .card-info p {
+        font-size: 1.2rem;
+    }
+
+    .li-info {
+        font-size: 1.2rem;
+        list-style: outside;
+        text-align: center;
+    }
+
+    .img1 {
+        background-size: cover;
+        background: url(https://cdn.britannica.com/83/117983-004-0A42BA1B/Kebnekaise-mountain-range-Sweden.jpg?s=1500x700&q=85) no-repeat;
+        background-position-y: 5%;
+        background-position-x: 40%;
+        padding: 12rem;
+    }
+
+    .blur {
+        background-color: rgba(0, 0, 0, 0.1);
+        transition: backdrop-filter 0.5s;
+        backdrop-filter: blur(0.5rem);
+        padding: 1rem;
+        border-radius: var(--border-radius);
+        color: var(--secondary-color);
+        top: -170px;
+        left: -170px;
+        position: relative;
+    }
+</style>
 
 
 <main>
@@ -30,31 +77,26 @@
         </div>
     </nav>
 
-    <p class="subtitle">The islands between the Philippine Sea and the South China Sea
+    <p class="subtitle">
+        The Kebnekaise is a mountain range in norther Sweden that is located 103 miles from the Arctic Circle.
     </p>
 
     <section class="grid">
 
-        <a href="places.html" class='card-info'>
-            <h2>Historical Places</h2>
-            <p>Locations and Structures that influenced history</p>
-        </a>
-
-        <a href="events.html" class='card-info'>
-            <h2>Events</h2>
+        <a class='card-info'>
+            <h2>The Kebnekaise Mountain Range</h2>
             <p>
-                Events and Celebrations that happen in the Philippines
+                After my visit to Kalmar, I went to the Kebnekaise Mountain Range to see the beautiful mountains.
+                Kebnekaise is located in the county of Norrbotten, northern Sweden, roughly 25 miles from the Norwegian border.
+                I had learned from a local hiker that the mountain range covers about 200 square miles.
+                The range is mostly desolate with remains of birch forests.
             </p>
-        </a>
-
-        <a href="about.html" class='card-info'>
-            <h2>About</h2>
-            <p>Locations and Structures that influenced history</p>
-        </a>
-
-        <a href="about.html" class='card-info'>
-            <h2>People</h2>
-            <p>Locations and Structures that influenced history</p>
+            <ol class="li-info">
+                <li>Kebnekaise is located in Norrbotten, norther Sweden</li>
+                <li>Kebnekaise is 25 miles from the Norwegian Border and 103 miles from the arctic circle</li>
+                <li>The range covers about 200 square miles</li>
+                <li>The range is mostly desolate with some stubs of a birch forest</li>
+            </ol>
         </a>
 
     </section>

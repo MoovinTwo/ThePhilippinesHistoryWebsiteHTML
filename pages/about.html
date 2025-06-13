@@ -36,6 +36,7 @@
       scale: 115%;
       border-radius: var(--border-radius);
       place-self: center;
+      text-align: center;
     }
 
     .blur:hover {
@@ -47,6 +48,26 @@
 
     .card-text {
       color: white;
+      text-align: center;
+    }
+
+    .source-title {
+      color: white;
+      text-align: center;
+      font-size: 1.5rem;
+      margin-top: 1.1rem;
+      background: var(--main-color);
+      border-radius: var(--border-radius);
+      padding: 0.75rem;
+      max-width: 100%;
+      width: 50%;
+
+      place-self: center;
+    }
+
+    .link {
+      color: deepskyblue;
+      text-decoration: underline;
     }
   </style>
 
@@ -69,6 +90,8 @@
   <p class="subtitle">This website was made by Sebastian Benz
   </p>
 
+
+  <h2 class="source-title">Image Sources</h2>
   <section class="grid">
     <a>
       <a href="https://imagebank.sweden.se/northern+lights/northern+sweden//5678#detail" class='card bg2'>
@@ -76,10 +99,22 @@
           <h2 class='card-text'>Northern Lights</h2>
           <h3 class='card-text'>by ASaf Kliger</h3>
           <h3 class='card-text'>sourced from Imagebank Sweden</h3>
+          <p class="link">https://imagebank.sweden.se/northern+lights/northern+sweden//5678#detail</p>
         </div>
       </a>
     </a>
+  </section>
 
+  <h2 class="source-title">Information Sources</h2>
+  <section class="grid">
+    <a>
+      <a href="https://www.britannica.com/event/Battle-of-Breitenfeld" class='card-info'>
+        <h2 class='card-text'>Battle of Breitenfeld</h2>
+        <h3 class='card-text'>by Jacob F. Field</h3>
+        <h3 class='card-text'>sourced Britannica</h3>
+        <p class="link">https://www.britannica.com/event/Battle-of-Breitenfeld</p>
+      </a>
+    </a>
   </section>
 
 

@@ -2,6 +2,8 @@
   --main-color: #005451;
   --secondary-color: #09837f;
   --hover-color: #119f9b;
+
+  --border-radius: 0.7rem;
 }
 
 @font-face {
@@ -23,7 +25,7 @@ body {
   font-size: 1.3rem;
   margin-top: 1rem;
   background: var(--main-color);
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   padding: 0.75rem;
   max-width: 100%;
 
@@ -48,7 +50,7 @@ body {
   transition: 0.5s ease;
   max-width: 300px;
   background-color: var(--main-color);
-  border-radius: 1rem;
+  border-radius: var(--border-radius);
 }
 
 .card-info {
@@ -60,7 +62,7 @@ body {
   transition: 0.5s ease;
   max-width: 300px;
   background-color: var(--main-color);
-  border-radius: 1rem;
+  border-radius: var(--border-radius);
 }
 
 .card-info:hover {
@@ -72,7 +74,7 @@ body {
   transition: 0.5s ease;
   max-width: 300px;
   background-color: var(--hover-color);
-  border-radius: 1rem;
+  border-radius: var(--border-radius);
   transform: scale(1.1);
 }
 
@@ -82,7 +84,7 @@ body {
   font-size: 1.3rem;
   margin-top: 1rem;
   background: var(--main-color);
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   padding: 1.2rem;
 }
 
@@ -93,7 +95,7 @@ body {
   text-decoration: none;
   margin-top: 1rem;
   background: var(--main-color);
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   padding: 0.75rem;
 
   place-self: center;
@@ -106,7 +108,7 @@ body {
   text-decoration: none;
   margin-top: 1rem;
   background: var(--main-color);
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   padding: 0.75rem;
   position: absolute;
   top: 0;
@@ -119,7 +121,7 @@ body {
   text-decoration: none;
   background: var(--secondary-color);
   transition: 0.5s ease;
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   padding: 0.75rem;
   margin: 0.2rem;
 }
@@ -136,7 +138,7 @@ body {
   text-decoration: none;
   margin-top: 1rem;
   background: var(--main-color);
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   padding: 0.75rem;
   position: absolute;
   right: 30px;
@@ -150,7 +152,7 @@ body {
   text-decoration: none;
   background: var(--secondary-color);
   transition: 0.5s ease;
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   padding: 0.75rem;
   margin: 0.2rem;
 }
